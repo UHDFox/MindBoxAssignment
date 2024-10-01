@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindBoxAssignment", "src\MindBoxAssignment.csproj", "{54B03198-BDD7-40BA-8822-9B9CED72E32C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{952A2985-DCC9-44F9-AAC9-ABDD0631DEFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{66184731-025B-46D2-BEC3-9FEE3BB175AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54B03198-BDD7-40BA-8822-9B9CED72E32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B03198-BDD7-40BA-8822-9B9CED72E32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B03198-BDD7-40BA-8822-9B9CED72E32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B03198-BDD7-40BA-8822-9B9CED72E32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66184731-025B-46D2-BEC3-9FEE3BB175AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66184731-025B-46D2-BEC3-9FEE3BB175AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66184731-025B-46D2-BEC3-9FEE3BB175AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66184731-025B-46D2-BEC3-9FEE3BB175AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{54B03198-BDD7-40BA-8822-9B9CED72E32C} = {952A2985-DCC9-44F9-AAC9-ABDD0631DEFA}
+	EndGlobalSection
+EndGlobal
