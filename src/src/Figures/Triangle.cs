@@ -2,7 +2,7 @@ namespace MindBoxAssignment.Figures;
 
 public sealed class Triangle : Figure
 {
-    public Triangle(double a, double b, double c)
+    private Triangle(double a, double b, double c)
     {
         if (a <= 0 || b <= 0 || c <= 0)
             throw new ArgumentException("Triangle sides must be positive");
@@ -29,6 +29,16 @@ public sealed class Triangle : Figure
             //the formula itself
             return Math.Sqrt(hPerim * (hPerim - A) * (hPerim - B) * (hPerim - C));
         }
+    }
+    
+    public static Triangle Create(double a, double b, double c)
+    {
+        return new Triangle(a, b, c);
+    }
+    
+    public static Triangle CreateWithDefaultValue()
+    {
+        return new Triangle(3, 4, 5);
     }
 
     public bool IsRightTriangle()

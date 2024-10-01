@@ -2,13 +2,11 @@ namespace MindBoxAssignment.Figures;
 
 public sealed class Circle : Figure
 {
-    public Circle(double radius)
+    private Circle(double radius)
     {
         if (radius < 0)
-        {
             throw new ArgumentException("Radius should be a positive number");
-        }
-        
+
         Radius = radius;
     }
     public double Radius { get; }
@@ -19,4 +17,8 @@ public sealed class Circle : Figure
         get => Math.PI * Math.Pow(Radius, 2);
     }
     
+    public static Circle Create(double radius) // static
+    {
+        return new Circle(radius);
+    }
 }

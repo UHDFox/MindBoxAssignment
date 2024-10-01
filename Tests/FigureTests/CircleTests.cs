@@ -1,3 +1,4 @@
+using System;
 using FluentAssertions;
 using MindBoxAssignment.Figures;
 using Xunit;
@@ -14,7 +15,7 @@ public sealed class CircleTests
     public void CircleArea_PositiveRadius_ShouldReturnCorrectArea(double radius, double expectedAreaMultiplier)
     {
         // Arrange
-        var circle = new Circle(radius);
+        var circle = Circle.Create(radius);
 
         // Act
         var area = circle.Area;
@@ -27,7 +28,7 @@ public sealed class CircleTests
     public void CircleConstructor_NegativeRadius_ShouldThrowArgumentException()
     {
         //Act
-        Action act = () => new Circle(-1);
+        Action act = () => Circle.Create(-1);
 
         //Assert
         act.Should().Throw<ArgumentException>()
@@ -39,7 +40,7 @@ public sealed class CircleTests
     {
         // Arrange
         var radius = 7;
-        var circle = new Circle(radius);
+        var circle = Circle.Create(radius);
 
         // Act
         var actualRadius = circle.Radius;
